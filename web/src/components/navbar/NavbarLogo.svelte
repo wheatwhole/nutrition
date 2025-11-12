@@ -1,5 +1,5 @@
 <div class="logo" aria-label="ciabi.dev logo">
-	<img class="cyclone-logo" src="/icons/cyclone.webp" alt="ciabi-logo" />
+	<img class="biology-logo" src="/icons/biology.jpg" alt="ciabi-logo" /> 
 </div>
 
 <style>

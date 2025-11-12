@@ -6,7 +6,6 @@
 </script>
 
   <nav class="navbar" class:test={test}>
-    <NavbarLogo />
     <nav class="navbar-tabs">
       <slot></slot>
     </nav>

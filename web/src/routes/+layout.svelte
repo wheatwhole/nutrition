@@ -9,11 +9,11 @@
 	import NavTab from '$components/navbar/NavTab.svelte';
 	import InfoIcon from '~icons/basil/info-rect-outline'; /* using Unplugin icons we can load icons at meowbalt speeds! */
 	// @ts-ignore (she aint even know it) (WHY DID I WRITE THIS WITHOUT KNOWING WHAT IT MEANT...)
-	import StarIcon from '~icons/basil/star-outline';
-	import BoxIcon from '~icons/basil/box-outline';
+	import CarbonIcon from '~icons/streamline-flex/3d-coordinate-axis-remix'
+	import MacroIcon from '~icons/streamline-flex/fried-egg-breakfast-remix';
 
 	import FlavorPicker from '$components/navbar/FlavorPicker.svelte';
-
+	import CarrotIcon from '~icons/streamline-flex/carrot-remix';
 	
 </script>
 
@@ -39,9 +39,9 @@
 	</div>
 
 	<Navbar>
-		<NavTab name={'about?'} Icon={InfoIcon} path={'/'} />
-		<NavTab name={'packages'} Icon={BoxIcon} path={'/packages'} />
-		<NavTab name={'test'} Icon={StarIcon} path={'/test'} />
+		<NavTab name={'nutrition'} Icon={CarrotIcon} path={'/'} />
+		<NavTab name={'carbon'} Icon={CarbonIcon} path={'/carbon'} />
+		<NavTab name={'macros'} Icon={MacroIcon} path={'/macromolecules'} />
 	</Navbar>
 </div>
 
