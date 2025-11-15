@@ -1,5 +1,5 @@
-<script>
-	let { url, urlshort, name, img } = $props();
+<script lang="ts">
+	let { url, urlshort, name, img }: { url: string; urlshort: string; name: string; img?: string } = $props();
     import LinkIcon from '~icons/tabler/external-link'; 
 </script>
 
@@ -68,9 +68,10 @@
 		padding: 7px 9px;
 		width: max-content;
 		text-decoration: none;
+		border: var(--button-stroke) solid 0.0625rem;
 	}
 
 	a.url-button:hover {
-		background: var(--button-default-hover);
+		background: var(--button-default);
 	}
 </style>

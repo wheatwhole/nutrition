@@ -41,6 +41,7 @@
 	<Navbar>
 		<NavTab name={'nutrition'} Icon={CarrotIcon} path={'/'} />
 		<NavTab name={'carbon'} Icon={CarbonIcon} path={'/carbon'} />
+		<NavTab name = {'macros'} Icon={MacroIcon} path={'/macromolecules'} />
 	</Navbar>
 </div>
 

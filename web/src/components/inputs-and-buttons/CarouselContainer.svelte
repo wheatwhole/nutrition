@@ -10,8 +10,13 @@
 		items,
 		onSelect,
 		defaultSelected = 0
-	}: { id: string; items: CarouselItemType[]; onSelect?: (item: CarouselItemType) => void; defaultSelected?: number } =
-		$props();
+	}: {
+		id: string;
+		items: CarouselItemType[];
+		onSelect?: (item: CarouselItemType) => void;
+		defaultSelected?: number;
+	} = $props();
+	
 	let activeItem = $state(defaultSelected);
 	let carousel: HTMLElement;
 
@@ -92,7 +97,6 @@
 		/* SO ITEMS DONT GET CUT OFF AT BEGINNING DAMN THIS TOOK LONG */
 		justify-content: flex-start;
 		/* */
-		
 	}
 
 	.carousel-items {
@@ -104,7 +108,7 @@
 		/* SO ITEMS DONT GET CUT OFF AT BEGINNING DAMN THIS TOOK LONG */
 		padding: 1rem 1.5rem;
 
-		align-items:flex-start;
+		align-items: flex-start;
 		justify-content: flex-start;
 		/* */
 		overflow-x: scroll;
@@ -134,29 +138,29 @@
 
 	.carousel-arrows {
 		display: flex;
-        flex-direction: row;
-        align-items: center;
-        position: absolute;
-        pointer-events: none;
-        width: 100%;
-        height: 100%;
-        z-index: 4;
-        overflow: hidden;
-        transition: opacity 0.2s;
+		flex-direction: row;
+		align-items: center;
+		position: absolute;
+		pointer-events: none;
+		width: 100%;
+		height: 100%;
+		z-index: 4;
+		overflow: hidden;
+		transition: opacity 0.2s;
 	}
 
 	.carousel-arrow {
 		position: absolute;
-        pointer-events: all;
-        color: var(--text-color);
+		pointer-events: all;
+		color: var(--text-color);
 		background: var(--bg-color);
 		border-radius: 50%;
-        padding: 0.75rem;
-		
-        &.hidden {
-            visibility: hidden;
-        }
-    }
+		padding: 0.75rem;
+
+		&.hidden {
+			visibility: hidden;
+		}
+	}
 
 	.carousel-arrow.left {
 		left: 0.625rem;

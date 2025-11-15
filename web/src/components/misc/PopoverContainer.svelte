@@ -20,6 +20,7 @@
     
 
     .popover-header {
+        user-select: none;
         display: flex;
         flex-direction: column;
         gap: calc(var(--padding) / 2);

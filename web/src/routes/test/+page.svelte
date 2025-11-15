@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { dialog } from './../../lib/state/dialogs.ts';
 	import Switcher from '$components/inputs-and-buttons/Switcher.svelte';
 	import Input from '$components/inputs-and-buttons/Input.svelte';
 	import ProjectCard from '$components/misc/ProjectCard.svelte';

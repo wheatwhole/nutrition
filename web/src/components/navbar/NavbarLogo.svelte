@@ -17,7 +17,7 @@
 		text-decoration: none;
 	}
 
-	.cyclone-logo {
+	.biology-logo {
 		width: 50px;
 		object-fit: cover;
 		height: 50px;
